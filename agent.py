@@ -7,6 +7,7 @@ import gpt_functions
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+#anims
 def parse_function_response(message):
     function_call = message["function_call"]
     function_name = function_call["name"]
